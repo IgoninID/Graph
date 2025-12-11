@@ -14,52 +14,6 @@
 using namespace std;
 
 /// <summary>
-/// Тестирование операций с вершинами (AddV, DeleteV, HasVert, size)
-/// </summary>
-void test_vertex_operations();
-
-/// <summary>
-/// Тестирование операций с рёбрами (AddE, DeleteE, HasEdge, GetEdge)
-/// </summary>
-void test_edge_operations();
-
-/// <summary>
-/// Тест BFS
-/// </summary>
-void test_bfs();
-
-/// <summary>
-/// Тест DFS
-/// </summary>
-void test_dfs();
-
-/// <summary>
-/// Тест BellmanFord
-/// </summary>
-void test_bellman_ford();
-
-/// <summary>
-/// Тест GetNeighbors
-/// </summary>
-void test_get_neighbors();
-
-/// <summary>
-/// Тест GetWeight
-/// </summary>
-void test_get_weight();
-
-/// <summary>
-/// Тест saveGraphML
-/// </summary>
-void test_saveGraphML();
-
-/// <summary>
-/// Тест loadGraphML
-/// </summary>
-void test_loadGraphML();
-
-
-/// <summary>
 /// Реализация ориентированного графа на основе матрицы смежности
 /// </summary>
 /// <typeparam name="T">тип вершин</typeparam>
@@ -465,6 +419,7 @@ public:
             throw runtime_error("GetWeight: ребро отсутствует");
 
         return adj[u][v];
+
     }
     
     /// <summary>
@@ -599,3 +554,48 @@ public:
         file.close();
     }
 };
+
+/// <summary>
+/// Тестирование операций с вершинами (AddV, DeleteV, HasVert, size)
+/// </summary>
+void test_vertex_operations();
+
+/// <summary>
+/// Тестирование операций с рёбрами (AddE, DeleteE, HasEdge, GetEdge)
+/// </summary>
+void test_edge_operations();
+
+/// <summary>
+/// Тест BFS
+/// </summary>
+void test_bfs();
+
+/// <summary>
+/// Тест DFS
+/// </summary>
+void test_dfs();
+
+/// <summary>
+/// Тест BellmanFord
+/// </summary>
+void test_bellman_ford();
+
+/// <summary>
+/// Тест GetNeighbors
+/// </summary>
+void test_get_neighbors();
+
+/// <summary>
+/// Тест GetWeight
+/// </summary>
+void test_get_weight();
+
+/// <summary>
+/// Тест saveGraphML
+/// </summary>
+void test_saveGraphML();
+
+/// <summary>
+/// Тест loadGraphML
+/// </summary>
+void test_loadGraphML();
